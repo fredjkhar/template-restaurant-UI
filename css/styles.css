@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #1b1918;
+    border-radius: 0;
+    border: 0;
+}
+
+#brand {
+    font-size: 40px;
+    font-style: italic;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+div > .img-fluid {
+    background-color: #ca150e;  
+}
+
+.container-xxl {
+    padding: 0;
+}
+
+#nav-list a {
+    color: #fff;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#nav-list a:hover {
+    color: #ca150e;
+}
+
+#phone {
+  text-align: center;
+  background-color: #1b1918;
+  font-size: 12.5;
+  color: #fff;
+  padding-bottom:15px;
+}
+
+.navbar-toggler {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    transition: .5s ease-in-out;
+    margin-right: 15px;
+}
+
+.navbar-toggler, .navbar-toggler:focus,
+.navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar_toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* When clicked */
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/*When navbar is collapsed*/
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+#logo-img {
+    margin-left: 15px;
+}
+
+/**** HOME PAGE ****/
+#home-page {
+    background: #1b1918;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#menu-tile, #specials-tile, #maps-tile {
+    width: 100%;
+    height: 250px;
+    margin-top: 25px;
+    margin-bottom:25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    border: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover,
+#maps-tile:hover {
+    box-shadow: 0 1px 5px 1px #ccc;
+}
+
+#menu-tile {
+    background: url('../images/menu-tile.jpg');
+    background-position: center;
+}
+
+#specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #maps-tile span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: .8;
+    background-color: #000;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 20px;
+}
+
+/**** FOOTER ****/
+
+#footer-page {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+    background-color: #363636;
+    border: 0px;
+}
+
+#footer-page > .row {
+    margin-bottom: 25px;
+}
+
+#footer-page span {
+    font-size: 1.3em;
+}
+
+#address p {
+    font-size: .8em;
+    line-height: 1.5;
+    color: #ca150e;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+
+/**** Large devices ***/
+@media (min-width: 1200px) {
+
+}
+
+/**** Medium devices ***/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    #logo-img {
+        background: url('../images/logo-medium.png');
+        width: 80px;
+        height: 80px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    i {
+        font-size: 14.0px;
+    }
+}
+
+/**** Small devices ***/
+@media (min-width: 768px) and (max-width: 991.99px) {
+    #logo-img {
+        background: url('../images/logo-small.png');
+        width: 60px;
+        height: 60px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    i {
+        font-size: 12.5px;
+    }
+}
+
+/**** Extra small devices devices ***/
+@media (max-width: 767.99px) {
+    #logo-img {
+        
+        background: url('../images/logo-small.png');
+        width: 60px;
+        height: 60px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    i {
+        font-size: 12px;
+    }
+    #footer-page {
+        text-align: center;
+    }
+}
