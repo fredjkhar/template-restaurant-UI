@@ -211,6 +211,48 @@ div > .img-fluid {
     margin-bottom: 25px;
 }
 
+/**** MENU CATEGORY ****/
+
+#menu-page {
+    background: #1b1918;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#menu-title {
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.category-tile {
+    position: relative;
+    border: 0px;
+    overflow: hidden;
+    width: 250px;
+    height: 265.4;
+    margin: 0 auto 15px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: .7;
+    background-color: #000;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #ccc;
+}
 
 /**** Large devices ***/
 @media (min-width: 1200px) {
