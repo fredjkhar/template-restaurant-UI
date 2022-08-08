@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
 	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/49118f0062.js" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	<script src="js/ajax-utils.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -22,18 +24,19 @@
 					<img id="logo-img" class="d-inline-block" src="images/logo.png"/>
 					<span class="d-none d-sm-inline-block d-flex">Spicy Pizza Bistro</span>
 				</a>
-				<button class="navbar-toggler collapsed d-flex flex-column justify-content-around d-lg-none" type="button" data-bs-toggle="collapse" 
+				<button class="navbarToggle navbar-toggler collapsed d-flex flex-column justify-content-around d-lg-none" type="button" data-bs-toggle="collapse" 
 				data-bs-target="#navbarNav" aria-controls="navbarNav" 
 				aria-expanded="false" aria-label="Toggle navigation">
 					<span class="toggler-icon top-bar"></span>
 					<span class="toggler-icon middle-bar"></span>
 					<span class="toggler-icon bottom-bar"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<div class="collapsable-nav collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul id="nav-list" class="navbar-nav align-middle">
 						<li class="nav-item">
 							<a href="menu.html" class="nav-link active">
-								<i class="fas fa-pizza-slice"> Menu</i>
+								<i class="fas fa-pizza-slice" 
+								onclick="$dc.loadMenuCategories();"> Menu</i>
 								
 							</a>
 						</li>
@@ -56,32 +59,8 @@
 				</div>
 			</div>
 		</nav>
-		<div id="home-page" class="container-xxl">
-			<div>
-				<img src="images/pic-header.jpg" class="img-fluid" alt="pizza-header">
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<a href="menu.html">
-						<div id="menu-tile"><span>Menu</span></div>
-					</a>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<a href="#">
-						<div id="specials-tile"><span>Specials</span></div>
-					</a>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4">
-					<a href="https://goo.gl/maps/7a2Bczvw6y5C1J8S6" target="_blank">
-						<div id="maps-tile">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11199.323550867464!2d-75.70340205!3d45.43291025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04f250722f33%3A0xdf56fa747ac8b9ff!2sMcDonald&#39;s!5e0!3m2!1sen!2sca!4v1653634146455!5m2!1sen!2sca"
-							 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
-							 referrerpolicy="no-referrer-when-downgrade"></iframe>
-							<span>Maps</span></div>
-					</a>
-				</div>
-			</div>
-		</div>
+		<div id="home-page" class="container-xxl"></div>
+		
 		<div id="footer-page" class="container-xxl">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4">
