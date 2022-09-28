@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+.header, .header--expanded {
+  background-image: url("../assets/img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.header .navbar, .header--expanded .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar__brand, .header--expanded .navbar__brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.header .navbar__brand .navbar__logo, .header--expanded .navbar__brand .navbar__logo {
+  transform: rotate(45deg);
+  width: 45px;
+  height: 45px;
+}
+.header .navbar__brand .navbar__name, .header--expanded .navbar__brand .navbar__name {
+  font-family: "Quicksand", "sans-serif";
+  font-size: 2.3rem;
+  color: rgb(95, 95, 95);
+}
+.header .navbar__list, .header--expanded .navbar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  list-style: none;
+}
+.header .navbar__list .navbar__link, .header--expanded .navbar__list .navbar__link {
+  padding-right: 20px;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", "sans-serif";
+  font-size: 1.4rem;
+  color: rgb(95, 95, 95);
+}
+.header .navbar__list .navbar__menu-btn, .header--expanded .navbar__list .navbar__menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  width: 60px;
+  height: 60px;
+}
+.header .navbar__list .navbar__menu-btn .navbar__menu-burger, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger, .header .navbar__list .navbar__menu-btn .navbar__menu-burger::before, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::before, .header .navbar__list .navbar__menu-btn .navbar__menu-burger::after, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::after {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(95, 95, 95);
+  transition: all 0.3s ease-in-out;
+}
+.header .navbar__list .navbar__menu-btn .navbar__menu-burger::before, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::before, .header .navbar__list .navbar__menu-btn .navbar__menu-burger::after, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::after {
+  content: "";
+  position: absolute;
+}
+.header .navbar__list .navbar__menu-btn .navbar__menu-burger::before, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::before {
+  transform: translateY(-8px);
+}
+.header .navbar__list .navbar__menu-btn .navbar__menu-burger::after, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::after {
+  transform: translateY(8px);
+}
+.header--expanded {
+  background-image: url("../assets/img/header-ex1.jpg");
+}
+.header--expanded .navbar__brand .navbar__logo {
+  filter: invert(100%);
+}
+.header--expanded .navbar__brand .navbar__name {
+  color: rgb(196, 196, 196);
+}
+.header--expanded .navbar__list .navbar__link {
+  color: rgb(196, 196, 196);
+}
+.header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::before, .header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::after {
+  transform: translateX(15px);
+  background-color: rgba(95, 95, 95, 0);
+}
+.header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::before {
+  opacity: 1;
+  transform: translateX(-15px) rotate(-45deg);
+  background-color: rgb(196, 196, 196);
+}
+.header--expanded .navbar__list .navbar__menu-btn .navbar__menu-burger::after {
+  opacity: 1;
+  transform: translateX(-15px) rotate(45deg);
+  background-color: rgb(196, 196, 196);
+}/*# sourceMappingURL=styles.css.map */
