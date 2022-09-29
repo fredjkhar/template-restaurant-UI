@@ -4,8 +4,7 @@
 
     const englishJsonDataUrl = "../assets/data/en/data.json";
     const frenchJsonDataUrl = "../assets/data/fr/data.json";
-
-
+    
     const header = document.querySelector('header');
     var navMenuOpen = false;
     js.navMenu = function () {
@@ -34,4 +33,7 @@
     global.$js = js;
 
 }) (window)
+
+
+
 

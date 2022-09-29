@@ -135,13 +135,34 @@
             
         }
     }
+}
 
-
-
-
-
-
-
-
+.about-section {
+    @include flexbox(flex, row, flex-start, top);
+    background-color: rgb(226, 230, 239);
+    position: relative;
     
+    &__image {
+        position: absolute;
+        top: 100px;
+        right:0;
+        background-image: url("../assets/img/img-left.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0px -1px 50px 16px rgba(29,29,29,0.64);
+        width: 400px;
+        aspect-ratio: 1 / 1.2;
+        
+    }
+
+    &__info {
+        @include flexbox(flex, column, top, left);
+        width: calc(100% - 400px);
+        background-color: rgb(15, 15, 15);
+        box-shadow: 0px -1px 50px 16px rgba(29,29,29,0.64);
+
+
+    }
+
 }
